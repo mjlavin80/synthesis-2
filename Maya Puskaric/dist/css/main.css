@@ -1,0 +1,53 @@
+ html {
+  min-height: 100%; /*I don't know why I need this but I do*/
+}
+
+body { /*gradient background*/
+  background: #222222; 
+  background: -webkit-linear-gradient(right top, #222222, #696969); 
+  background: -o-linear-gradient(bottom left, #222222, #696969); 
+  background: -moz-linear-gradient(bottom left, #222222, #696969); 
+  background: linear-gradient(to bottom left, #222222, #696969);  
+
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  color:#fff !important;
+
+
+
+}
+
+a {
+  color:#fff !important;
+
+}
+
+a:hover {
+  color:#00ffdb !important;
+}
+
+.navbar-inverse {
+  background-color:rgba(0,0,0,.7) !important;
+}
+
+p {
+  color:#fff;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.test {
+  background-color:rgba(0,0,0,.7);
+  margin:5%;
+  padding:1%;
+}
+
+.test2 {
+  margin-left: 23%;
+  margin-right: 23%;
+  padding:1%;
+}
