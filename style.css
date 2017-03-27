@@ -56,20 +56,20 @@ th{
 
 img.resize1{
     float:left;
-    max-width: 60%;
+    max-width: 48%;
     max-height: 60%;
     border-style: solid;
-    border-color: #DC9E82;
+    border-color: #326273;
     border-width: 5px;
     border-radius: 25px;
 }
 
 img.resize2{
     float:right;
-    max-width: 60%;
+    max-width: 48%;
     max-height: 60%;
     border-style: solid;
-    border-color: #DC9E82;
+    border-color: #326273;
     border-width: 5px;
     border-radius: 25px;
     margin-bottom: 25px;
