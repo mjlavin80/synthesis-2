@@ -2,22 +2,107 @@
 <html>
 <head>
 <style>
-button {
-    background-color: #D10E0E;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
+body {
+    background-color: white;
 }
+
+h1 {
+    color: #1670E6;
+    text-align: center;
+    font-family: Trebuchet MS;
+}
+
+h4 {
+	 color: #1670E6;
+    text-align: center;
+    font-family: Trebuchet MS;
+}
+
+p {
+    color: black;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+a {
+	color: #E232AD;
+}
+
+.Twitter img {
+	display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.Presidents img {
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.Losers img {
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.Finally img {
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.Chart img {
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+table {
+	border-collapse: collapse;
+    margin: auto;
+}
+
+table tr td {
+	border: 1px solid black;
+    text-align: center;
+}
+
+table th {
+	border: 1px solid black;
+    text-align: center;
+}
+	
+hr {
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+	
+button {
+    	background-color: #D10E0E;
+    	border: none;
+    	color: white;
+    	padding: 15px 32px;
+    	text-align: center;
+    	text-decoration: none;
+   		display: inline-block;
+    	font-size: 12px;
+    	margin: 2px 2px;
+    	cursor: pointer;
+		font-family: trebuchet ms;
 
 </style>
 </head>
 <body>
+
+<h1>Donald Trump: Twitter Usage Over Time</h1>
+
+<h4>By Katie Osborne</h4>
+
+<hr style: color= #1670E6>
 
 <script type = "text/javascript">
         function trump2017()
@@ -27,17 +112,106 @@ button {
         function trump2016()
         {
             document.getElementById("2016").src ="trump2016.png";
+		function trump2015()
+        {
+            document.getElementById("2015").src ="trump2015.png";
+        }function trump2014()
+        {
+            document.getElementById("2014").src ="trump2014.png";
+        }function trump2013()
+        {
+            document.getElementById("2013").src ="trump2013.png";
+        }function trump2012()
+        {
+            document.getElementById("2012").src ="trump2012.png";
+        }function trump2011()
+        {
+            document.getElementById("2011").src ="trump2011.png";
+        }function trump2010()
+        {
+            document.getElementById("2010").src ="trump2010.png";
+        }function trump2009()
+        {
+            document.getElementById("2009").src ="trump2009.png";
         } </script>
 
 <button onclick="trump2017()">2017</button>
-<button onclick="document.getElementById('2016').src='trump2016.png'">2016</button>
-<button onclick="document.getElementById('2015').src='trump2015.png'">2015</button>
-<button onclick="document.getElementById('2014').src='trump2014.png'">2014</button>
-<button onclick="document.getElementById('2013').src='trump2013.png'">2013</button>
-<button onclick="document.getElementById('2012').src='trump2012.png'">2012</button>
-<button onclick="document.getElementById('2011').src='trump2011.png'">2011</button>
-<button onclick="document.getElementById('2010').src='trump2010.png'">2010</button>
-<button onclick="document.getElementById('2009').src='trump2009.png'">2009</button>
+<button onclick="trump2016()">2016</button>
+<button onclick="trump2015()">2015</button>
+<button onclick="trump2014()">2014</button>
+<button onclick="trump2013()">2013</button>
+<button onclick="trump2012()">2012</button>
+<button onclick="trump2011()">2011</button>
+<button onclick="trump2010()">2010</button>
+<button onclick="trump2009()">2009</button>
 
+<p>To build on my synthesis 1 assignment, I decided to take another look at the data I found of all of Donald Trump's tweets since the creation of his <a href="https://twitter.com/realDonaldTrump">@realdonaldtrump</a> Twitter account in 2009. In the last project, I looked at the most common words used in both Trump's and Obama's tweets during the times they have been president. This time, I wanted to look more closely at The Donald to see how his language usage has changed (or not changed) over time.</p> 
+
+<div class="Twitter">
+<img src="https://img.clipartfest.com/314d2458c4d5341f2cb7b3860e977fad_by-using-twitter-if-you-twitter-logo-clipart_320-260.png">
+</div>
+
+<p>For Obama, I analyzed tweets from his <a href="https://archive.org/download/ObamaWhiteHousePotusTwitterData">@POTUS</a> account, which was active from May 18th, 2015 up until the 11th of November, 2016 which has now become the official Twitter account for Donald Trump, despite his frequent postings to his "personal" account <a href="https://twitter.com/realDonaldTrump">@realdonaldtrump</a>. I used tweets from this account from the date of his election on November 8th to present, thanks to <a href="http://www.trumptwitterarchive.com/#/">Trump Twitter Archive</a> (raw data found <a href="https://github.com/bpb27/political_twitter_archive/tree/master/realdonaldtrump">here</a>). </p>
+
+<div class="Presidents">
+<img src="https://www.speakscore.net/assets/images/blog/obama-vs-trump.jpg">
+</div>
+
+<p>The two politicians have both taken very different approaches to the presidency and each have radically different views. Those views have been met with a lot of anger and hatred, dividing our country even more than it already is. In order to explore this, I decided to see what words each man used frequently in their tweets during their time as president. I didn't expect to find many similarities, since Trump is a big fan of calling people "losers" and "sad" much more than he seems to be interested in talking about actual public policies.</p>
+
+<div class="Losers">
+<img src="https://www.presidentials2016.com/wp-content/uploads/2015/05/Donald-Trump-Memorial-Tweet.png">
+</div>
+
+<p>To do this, I used a website that analyzes text to create word clouds: an array of words of different sizes based on usage. <a href="http://tagcrowd.com/">Tag Crowd</a> allowed me to enter text and gave me back the top 15 most used words (beyond those common in the English language) from the data I submitted. The data is certainly somewhat skewed because Donald Trump has over 300 more tweets just in the time since he had been elected president in November than the all the the tweets that Barack Obama ever posted on his account since its creation in 2015.</p>
+
+<div class="Finally">
+<img src="http://b945live.com/wp-content/uploads/sites/7/2015/05/obama.jpg">
+</div>
+
+<p>After collecting that data, I was able to plug those numbers into Python using the "matplotlib" program and found that of each president's top 15 most used words on Twitter, five of them were the same. Their usage level was not exaclty the same, but similar enough to display on this chart. Here, we can see that although both men seem to be complete opposites, that their main topics of discussion, at least online, are similar. The red bars represent Donald Trump's usage of the word and the blue bars represent Obama's usage of the word.</p>
+
+<div class="Chart">
+<img src="https://pbs.twimg.com/media/C5wFMuRVMAArx1o.jpg:large">
+</div>
+
+<p>Below is the exact data I collected from the wordcloud software, showing the usage numbers more clearly.</p>
+
+<table style="width:50%">
+  <tr>
+    <th>Word</th>
+    <th>Usage: Trump</th> 
+    <th>Usage: Obama</th>
+  </tr>
+  <tr>
+    <td>"People"</td>
+    <td>55</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>"Thank"</td>
+    <td>52</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>"Today"</td>
+    <td>29</td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td>"Vote"</td>
+    <td>23</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>"America"</td>
+    <td>17</td>
+    <td>70</td>
+  </tr>
+</table>
+
+<p>In today's political climate, it's easy to take sides and never look at another person's point of view that differs from your own. With this project, I want to break that cycle and focus on what brings us together, rather than tears us apart. Donald Trump's public discourse may carry a different tone and support different policies than Barack Obama's, but he still has some similar values to our former president. Both men spend time on Twitter talking about the "people" of our country and "America" as a whole. They both urged us to "vote" and realize that our voices count in this democracy. They both have aimed to stay current, highlighting what's going on "today" and both men have used Twitter as a platform to personally "thank" us. Although this data is only a small insight into an enormous topic, it highlights the fact that even in the face of seemingly insurrmountable differences, you may find some unexpected similarities.</p>
 </body>
+</html>
+
 </html>
