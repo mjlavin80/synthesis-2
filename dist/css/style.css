@@ -7,22 +7,23 @@ div {
 
 h1 {
 	font-family: cursive, Verdana, Arial;
-	color: #816C5B;
+	color: #c0e15e;
 	}
 	
 h3 {
 	font-family: cursive, Verdana, Arial;
-	color: #816C5B;
+	color: #c0e15e;
 	}
 
 body {
 	background-color: #E5F3CF;
-	font-family: Verdana'
+	font-family: Verdana;
+	background-color: #c0e15e;
 	}
 	
 
 b {
-	color: #36454c;
+	color: #e19d48;
 	}
 	
 /* Trying to make a cool navigation bar */
@@ -30,12 +31,6 @@ b {
 * {
    padding: 0;
    margin: 0;
-}
- 
-body {
-   background: #f4f1e5;
-   color: #544738;
-   font-family: helvetica, sans-serif;
 }
 
 ul li {
@@ -59,7 +54,7 @@ li a:hover {
 /*End of nav bar code */
 	
 a {
-	color: #FF8642;
+	color: #e19d48;
 	text-decoration: none;
 	}
 	
