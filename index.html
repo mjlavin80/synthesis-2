@@ -19,7 +19,17 @@ button {
 </head>
 <body>
 
-<button onclick="document.getElementById('2017').src='trump2017.png'">2017</button>
+<script type = "text/javascript">
+        function trump2017()
+        {
+            document.getElementById("2017").src = "trump2017.png";
+        }
+        function trump2016()
+        {
+            document.getElementById("2016").src ="trump2016.png";
+        } </script>
+
+<button onclick="trump2017()">2017</button>
 <button onclick="document.getElementById('2016').src='trump2016.png'">2016</button>
 <button onclick="document.getElementById('2015').src='trump2015.png'">2015</button>
 <button onclick="document.getElementById('2014').src='trump2014.png'">2014</button>
@@ -32,22 +42,10 @@ button {
 <img id="2017" src="tump2017.png" style="width:1000px">
 <img id="2016" src="tump2016.png" style="width:1000px">
 
-<script type = "text/javascript">
-        function trump2017()
-        {
-            document.getElementById("2017").src = "trump2017.png";
-        }
-        function trump2016()
-        {
-            document.getElementById("2016").src ="trump2016.png";
-        } </script>
 
 
-
-
-
-    <img src = "" id = "img"/> <input type="button" value="Show Picture
-    1" onclick="pic1()"/> <input type="button" value="Show Picture 2"
+<img src = "trump2017.png" id = "2017"/> <input type="button" value="Show Picture
+    1" onclick="trump2017()"/> <input type="button" value="Show Picture 2"
     onclick="pic2()"/>
 </body>
 </html>
