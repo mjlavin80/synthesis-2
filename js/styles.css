@@ -1,0 +1,48 @@
+/*At this point this is a self-constructed template */
+
+html {
+
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  border-color: #4283f4;
+  border-width:8px;
+  border-style: solid;
+  width: 30%;
+
+}
+header{
+	padding-left: 10px;
+	background: #fbb;
+    border-width: 2px;
+    border-style:solid;
+}
+
+article,
+footer,
+main,
+section
+{
+  padding-left:5px;
+  background-color:#fff;
+  display: block;
+}
+main{
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+footer{
+  background-color: #fff;
+  padding: 10px;
+}
+.floatleft {
+    float:left;
+}
+.floatright{
+	float:right;
+}
+h1{
+	color: white;
+}
