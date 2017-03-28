@@ -1,24 +1,51 @@
 $(document).ready(function(){
   Chart.defaults.global.defaultFontColor = '#fff';
 
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'pie',
+  var ctx = document.getElementById('myChart').getContext('2d');
 
-  data: {
-    labels: ["He tha best", "Hottest memes", "Cutie 11/10", "V Snuggly", "Very soft", "Can literally throw me"],
+  var dataOptions = {
+    labels: ["Allegheny General", "Allegheny Valley", "Forbes Regional", "Heritage Valley", "Jefferson Regional", "Ohio Valley", "St. Clair", "UPMC East", "UPMC McKeesport", "UPMC Passavant", "UPMC Presbyterian", "UPMC St. Margaret's", "West Penn"],
     datasets: [{
+      label: "2016",
       backgroundColor: [
-        "#ff0000",
-        "#ff00f6",
-        "#b400ff",
-        "#00f0ff",
-        "#00ff12",
-        "#fffc00",
-        
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)'
       ],
-      data: [32, 103, 55, 67, 37, 100,]
+      
+      borderColor: [
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)',
+      'rgba(204, 0, 0, 0.25)'
+      ],
+      borderWidth: 1,
+      data: [65, 59, 80, 81, 56, 55, 41],
     }]
-  }
-});
+  };
+
+  var myBarChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: dataOptions,
+    options: {}
+  });
 });
