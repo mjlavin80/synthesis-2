@@ -2,6 +2,8 @@
   min-height: 100%; /*I don't know why I need this but I do*/
 }
 
+
+
 body { /*gradient background*/
   background: #222222; 
   background: -webkit-linear-gradient(right top, #222222, #696969); 
@@ -9,16 +11,19 @@ body { /*gradient background*/
   background: -moz-linear-gradient(bottom left, #222222, #696969); 
   background: linear-gradient(to bottom left, #222222, #696969);  
 
+
+
 }
 
 h1 {
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   color:#fff !important;
-
-
+  padding: 1%;
+  background: black;
 
 }
+
 
 a {
   color:#fff !important;
@@ -47,6 +52,7 @@ p {
 }
 
 .test2 {
+  height:100%;
   margin-left: 2%;
   margin-right: 2%;
   }

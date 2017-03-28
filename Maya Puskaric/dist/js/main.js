@@ -117,48 +117,49 @@ $(document).ready(function(){
    }, {
     label: "2013",
     hidden:true,
-     backgroundColor: [
-     'rgba(26, 113, 90, 0.4)',
-     'rgba(200, 117, 30, 0.4)',
-     'rgba(247, 215, 49, 0.4)',
-     'rgba(200, 117, 30, 0.4)',
-     'rgba(247, 215, 49, 0.4)',
-     'rgba(200, 117, 30, 0.4)',
-     'rgba(26, 113, 90, 0.4)',
-     'rgba(200, 117, 30, 0.4)',
-     'rgba(247, 215, 49, 0.4)',
-     'rgba(247, 215, 49, 0.4)',
-     'rgba(247, 215, 49, 0.4)',
-     'rgba(26, 113, 90, 0.4)',
-     'rgba(26, 113, 90, 0.4)'
-     ],
+    backgroundColor: [
+    'rgba(26, 113, 90, 0.4)',
+    'rgba(200, 117, 30, 0.4)',
+    'rgba(247, 215, 49, 0.4)',
+    'rgba(200, 117, 30, 0.4)',
+    'rgba(247, 215, 49, 0.4)',
+    'rgba(200, 117, 30, 0.4)',
+    'rgba(26, 113, 90, 0.4)',
+    'rgba(200, 117, 30, 0.4)',
+    'rgba(247, 215, 49, 0.4)',
+    'rgba(247, 215, 49, 0.4)',
+    'rgba(247, 215, 49, 0.4)',
+    'rgba(26, 113, 90, 0.4)',
+    'rgba(26, 113, 90, 0.4)'
+    ],
 
-     borderColor: [
-     'rgba(26, 113, 90, 0.9)',
-     'rgba(200, 117, 30, 0.9)',
-     'rgba(247, 215, 49, 0.9)',
-     'rgba(200, 117, 30, 0.9)',
-     'rgba(247, 215, 49, 0.9)',
-     'rgba(200, 117, 30, 0.9)',
-     'rgba(26, 113, 90, 0.9)',
-     'rgba(200, 117, 30, 0.9)',
-     'rgba(247, 215, 49, 0.9)',
-     'rgba(247, 215, 49, 0.9)',
-     'rgba(247, 215, 49, 0.9)',
-     'rgba(26, 113, 90, 0.9)',
-     'rgba(26, 113, 90, 0.9)'
-     ],
-     borderWidth: 1,
-     data: [5, 3, 3.5, 3, 4, 3, 5, 1, 4, 3.5, 4, 5, 5]
+    borderColor: [
+    'rgba(26, 113, 90, 0.9)',
+    'rgba(200, 117, 30, 0.9)',
+    'rgba(247, 215, 49, 0.9)',
+    'rgba(200, 117, 30, 0.9)',
+    'rgba(247, 215, 49, 0.9)',
+    'rgba(200, 117, 30, 0.9)',
+    'rgba(26, 113, 90, 0.9)',
+    'rgba(200, 117, 30, 0.9)',
+    'rgba(247, 215, 49, 0.9)',
+    'rgba(247, 215, 49, 0.9)',
+    'rgba(247, 215, 49, 0.9)',
+    'rgba(26, 113, 90, 0.9)',
+    'rgba(26, 113, 90, 0.9)'
+    ],
+    borderWidth: 1,
+    data: [5, 3, 3.5, 3, 4, 3, 5, 1, 4, 3.5, 4, 5, 5]
 
-   }], 
+  }], 
 
 
- };
+};
 
- var myBarChart = new Chart(ctx, {
+var myBarChart = new Chart(ctx, {
 
   type: 'horizontalBar',
+  /*their great idea was to name it data: data, but I chose otherwise because I don't enjoy confusing myself*/
   data: dataOptions,
   options: {
     scales: {
@@ -168,10 +169,13 @@ $(document).ready(function(){
           labelString: 'Grade ( 1 to 5 )'
         },
         ticks: {
+          /*forces the lowest value on the chart to actually show up*/
           suggestedMin: 1
         }
       }]
     }
   }
 });
+
+
 });
