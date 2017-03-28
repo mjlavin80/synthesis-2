@@ -1,1 +1,213 @@
-This file is just a reminder to title your project "index.html"
+<!DOCTYPE html>
+<html>
+<title>Lyme Disease</title>
+<meta charset="UTF-8">
+<head>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,600italic,700italic,200,300,400,600,700,900">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<!-- code for map that does not work -->
+//<style>
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times News Roman', sans-serif;
+  font-size: 1em;
+  color: #333;
+  font-weight: 500;
+}
+
+#content {
+  margin: 5px;
+  padding: 20px;
+  width: 805px;
+  border: 1px solid #ccc;
+}
+
+#map {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
+
+h1, h2 {
+  line-height: 1em;
+  font-size: 1.75em;
+  font-weight: 900;
+  color: #000;
+}
+
+h2.year {
+  margin: 10px 0px 0px 0px;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+p {
+  margin: 10px 0px 0px 0px;
+}
+
+.county {
+  fill: #fff;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+input {
+  display: block;
+  width: 200px;
+  margin: 10px 0px 0px 0px;
+}
+
+#legend text {
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 400;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 7px;
+  font-size: 0.9em;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  -moz-box-shadow:    5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:         3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tooltip p {
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.wide {
+  width: 140px;
+}
+
+</style>
+
+//</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    
+}
+</style>
+<body>
+
+<!-- Top Nav Bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding-8 w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button w3-margin-left">Lyme Disease</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#The Start" class="w3-bar-item w3-button">The Start</a>
+      <a href="#Map" class="w3-bar-item w3-button">Map</a>
+      <a href="#Statement" class="w3-bar-item w3-button">Statement</a>
+      <a href="#Sources" class="w3-bar-item w3-button">Sources</a>
+    </div>
+  </div>
+</div>
+
+<!-- First Image -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://previews.123rf.com/images/hui/hui1407/hui140700028/30184059-barro-h-medo-con-ruedas-de-coche-de-textura-Foto-de-archivo.jpg" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-xlarge w3-opacity">
+    <h1 class="w3-xxlarge"><font color="white">Lyme Disease</font></h1>
+  </div>
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+
+
+  <!-- Openiing Section -->
+  <div class="w3-row w3-padding-64" id="The Start">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="http://mediad.publicbroadcasting.net/p/wvtf/files/styles/medium/public/201603/tick_03.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Mud, Deer Ticks, Lyme Disease, OH MY!</h1><br>
+      <p class="w3-large">On this project, I wanted to tackle something besides just smoking usage.  Everybody knows it is bad for them and it is not a new phenomenon.  So I decided to look into Lyme Disease using the Centers for Disease Control data.  Their dataset was very thorough, it spanned from 2000-2015 and had each county and their respective number of cases per year.  After downloading the dataset I realized I came across the issue of formatting.  By golly that was fun.  The format was horizontal and not in ‘long format’, which after some frustration read that when creating a choropleth it is best to arrange your data in a long format for it is easy for it to be read.  After some formatting woes, I was finally able to have it in the correct readable format.</p>
+      <p class="w3-large">Next came the difficult part.  Actually using the data to create a choropleth.  On the CDC’s website, they had a pretty rudimentary way of displaying the data through the years, it was essentially just screen shots put into a slider.  This did a decent job of conveying that Lyme Disease has spread very dramatically in the northwest but not elsewhere.  The CDC also plotted Lyme Disease cases as a point randomly put in each county, this led to some areas disproportionally heavy with data and others very light.  To fix this I decided to plot the data set in a choropleth because everybody loves colors and different shades of colors.  Colors are cool (but also can be warm).  
+</p>
+ 		<p class="w3-large">
+    </div>
+  </div>
+  
+  <hr>
+   <!-- my map  -->
+  <div class="w3-row w3-padding-64" id="Map">
+         <p><a href="http://bl.ocks.org/Crunchytoastmmm/raw/4f219997029a94142cbb978aaa60d5d5/">Since I could not get my map to display on GitHib, click here.</a></p>                                         
+  
+  <!-- Statement -->
+  <div class="w3-row w3-padding-64" id="Statement">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Statement</h1><br>
+      <p class=“w3-large>After searching I found a couple choropleths that I liked but did not have a slider to display data across multiple years.  This left me to succumb to the same level as the CDC’s level of ‘scrolling screenshots’, for developing a slider would require a fair amount of javascript, which is one of my weaknesses.  As I began to make each choropleth and save it I still did some light research and I came across the exact choropleth that I wanted!  It had a slider!  I was able to borrow the code from <a href="http://bl.ocks.org/dougdowson/9832019">Doug Dowson</a>which helped tremendously.</p>
+       
+	      <p class=“w3-large>Using that code I changed the color scheme to a range of light tan to dark brown so symbolize the advance of mud.  Ticks preferable place is in mud and grassy areas so I decided to go with that color scheme to show the new territory of Lyme disease.  I got rid of the code that calculated percent difference between the 2000 and 2015 and just made it simple subtraction.  One other thing that did surprise me was I still used a similarly numbered scale.  I found if I tried to attach the colors to the standard deviations of the data the map really did not show the influx of Lyme Disease in the northeastern part of the United States.  Using just 0-30 scale was the most adventitious to display data.  I found counties either had a very dense count with 150 to 450 cases.  There were, of course, some outliers with over 1000 cases.  For most of the counties that became had a ‘boom’ of Lyme Disease usually topped out at 30-40.  Using this shortened scale I think reflected the data in a more accurate way.  Overall I think it came out well but with using Github I did run into an issue where the map would be displayed in ‘Live Preview’ with app Brackets but once I uploaded my files the choropleth would not load.  That is why I had to link the map, for I could not figure out a way to host it with GitHub.
+</p>
+ 		
+        
+	      </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://www.homecuresthatwork.com/wp-content/uploads/2015/09/later-signs-and-symptoms-of-lyme-disease.jpg" class="w3-round w3-image w3-opacity-min" " width="500" height="750"> </div>
+    </div>
+  <div id="content">
+	<h1>U.S. Lyme Disease reported, 2000-2015  </h1>
+	<h2 class="year"></h2>
+	<div class="slider"></div>
+	<div id="map"></div>
+	<p><a href=https://www.cdc.gov/lyme/stats/index.html>Centers for Disease Control and Prevention.</a></p>
+	<script type="text/javascript" src="map.js"></script>
+</div>
+
+<!-- <script type="text/javascript" src="map.js"></script> -->
+
+  <hr>
+  <!-- Sources Section -->
+  <div class="w3-container w3-padding-64" id="Sources">
+    <h1>Sources</h1>
+    
+      <p><a href="http://mediad.publicbroadcasting.net/p/wvtf/files/styles/medium/public/201603/tick_03.jpg">Tick Image</a></p>                                                                                   
+      <p><a href="https://previews.123rf.com/images/hui/hui1407/hui140700028/30184059-barro-h-medo-con-ruedas-de-coche-de-textura-Foto-de-archivo.jpg">Mud Image</a></p>
+      <p><a href="http://bl.ocks.org/dougdowson/9832019"> Doug Dowson</a></p>
+<p><a href="https://www.cdc.gov/lyme/stats/index.html">Lyme Disease Data</a></p>	
+<p><a href="https://www.homecuresthatwork.com/wp-content/uploads/2015/09/later-signs-and-symptoms-of-lyme-disease.jpg">Symtoms Image</a></p>
+                                                                                              
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
