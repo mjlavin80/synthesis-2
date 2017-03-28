@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Synthesis 1</title>
+  <meta charset="utf-8" />
+
+  <link type="text/css" rel="stylesheet" href="/dist/css/bootstrap.css" />
+  <link type="text/css" rel="stylesheet" href="../dist/css/style.css" />
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+          <div class="col-md-14">
+          
+            <!-- Navigation bar code -->
+        <br>
+        <ul id="nav">
+        	<li><a href="https://alexamarzina.github.io/synthesis-2/">Introduction</a></li>
+  			<li><a href="https://alexamarzina.github.io/synthesis-2/data-representation">Data Representation</a></li>
+  			<li><a href="javascript:void(0)">Artist Statement</a></li>
+ 		</ul>
+		<!-- End nav bar -->
+		
+          
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-14">
+            
+            <h1>Artist Statement</h1>
+        	<table class="table table-bordered">
+        		<tr>
+        			<td>
+        			<p>This project has morphed over the past few weeks. Originally the goal was to make a map of the world that plotted the locations at which the songs from the subset of the Million Songs Dataset were written. However, I realized this goal was a little too far-fetched for the time being, so I chose to go with a word cloud displaying the popularities of words in the titles of the songs — the bigger a word is in the cloud, the more times said word appears in the titles of the songs. This, of course, is excluding stop words (e.g. “the,” “it,” “a,” as well as “album” and “version”). Note that this dataset includes songs written from 1926 to 2010.
+        			</p>
+        			<br>
+        			<p>In Python, I generated a word cloud to get a basic cloud. Then, I was able to change the mask (shape) through <a href="https://github.com/amueller/word_cloud/blob/master/examples/masked.py">this</a> tutorial; I chose a music note shape to stick to the theme of songs and music. I was also able to change the font to Quicksand (I wanted to choose something readable and large) by simply changing the font path provided in the code from the Frank Gothic Data repository that we visited in class.
+        			</p>
+        			<br>
+        			<p>It is quite easy to see that two of the biggest words — therefore the most frequently used in song titles — are “love” and “live.” Due to the high popularity and relatability of songs that are about love and life, it makes sense that these words are included in the titles! This brings up the question of why people would want to listen to songs potentially about missed love or a bad life, especially if they are in a similar situation, but I guess just knowing that other people feel the same way is comforting.
+        			</p>
+        			<br>
+        			<p>It’s funny that the word “song” itself pops up pretty large, as you can see on the right-hand side. In hindsight, maybe this should have been added to the stop words, but it is interesting that quite a few songs have the word “song” in their title… is this a lazy song-naming tactic or a genius marketing ploy? You decide.
+        			</p>
+        			<br>
+        			<p>Ideally, I wanted to change the colors of the words themselves, but was unable to successfully do this. I couldn’t find any useful tutorials or guides online to see how to change them; all of them seemed to use high-level tactics or just didn’t work at all. I don’t mind the colors that it ended up being, so I will consider this a nonissue in the grand scheme of things. I am just proud of the details that I was able to change!
+        			</p>
+        			<br>
+        			<p>All in all, this project was able to show a good glimpse into both the dataset as well as my own personal growth. The cloud itself is unsurprising — cheesy love songs and songs to sulk in your own personal suffering are, and apparently always have been, super popular. The world’s song choices seem to be just as sappy and emo recently as they were in 1926. I, personally, have also come quite-a-ways intellectually and emotionally from this project. Coding is something that is extremely difficult to learn, as there is only so much that external sources can do for you; a lot of it is very independent learning, something I am not at all good at or confident with. Based on the original view of this project, finding a more reasonable goal to work for was a lot better for both my grades and my mental health in the long run.
+        			</p>
+        			</td>
+        			</tr>
+        			</table>
+        
+        <br>
+        <br>
+        <br>
+        
+        </div>
+     </div>
+  </div>
+ </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="dist/js/bootstrap.js"></script>
+
+</body>
+</html>
