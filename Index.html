@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 2em;
+    color: white;
+    background-color: black;
+    background-image:url('movie-header3.jpg');
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+
+}
+
+p { 
+	text-align: left;
+
+ }
+
+ul {
+	text-align: left;
+}
+
+p.center {
+	text-align: center;
+}
+
+</style>
+
+<!-- ###I am not sure WHY I cannot make changes to the text-align in style for p.center -->
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<header>
+	<h1></h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="https://ngl4.github.io/skills/">Skills</a></li>
+    <li><a href="https://ngl4.github.io/synthesis-1/syn1_index.html">Synthesis 1</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Synthesis 2: Popular Movies Since 1990s</h1><br>
+  <h3>Artisitic Statement</h3> 
+  <p>I have set a goal for synthesis two is to be able to apply python more and also to explore the different options of graph development and try to experiment with them. I personally have the interest in movies and story-telling. As a result, I have found all the data from MovieLens, a non-commercial, personalized recommendation of movies. MovieLens has been able to collect rich data from users’ rating and is using “community-applied tags” to assist the users to search for movies. In general, MovieLens is under GroupLens, a research lab at the University of Minnesota. MovieLens is also developed for as an experimental tool for GroupLens’ data exploration and research. In terms of the credibility of the source, I personally believe it is reliable because of it is based under a university research. I have got three data sets from MovieLens: movies.dat, tags.dat, and tag_relevance.dat. I have thought of developing something that I can incorporate all the data. However, I think it is better to first of all develop a visualization of one of the data first before I move on. As a result, I only choose movies.dat as the dataset I use for the chart below. </p>
+  
+  <p>For synthesis two, I have placed my attention more on going through all the step-by-step process in learning how to interpret data and have been researching on different graph and data visualization online and make comparison. This is the first for me to use plot.ly and I have not used this before or for my last assignment. I like how plot.ly can get some pretty colors in graph. I think plot.ly has been great for beginner because it provides codes for certain graph and let you interpret it and see how the code works. I still have not figured out how to make the graph interactive though. I have tried to create a slightly different color sections for the graph and so it will not only display in one color. I did this in the jupyter notebook (try-out-graphs), but then it crashes the whole notebook page. I do not know why. I think it might be too big to load on the webpage. I also encounter other problems such as not knowing how to separate a single column, which I have figured it out after knowing from Professor Lavin that I can also do it in Excel. In general, small problems such as plot.ly error, file not found, syntax error, and etc. Solving small problems can take a little while. </p>
+
+  <p>The reason I choose to use the scatter plots as the graph chart for the movies popularities data set is because I believe it is able to show what movies at what periods are most popular to watch among users of the MovieLens. However, the scatter plot also hinder the movies that are not so popular because of the high density of the bottom side of the chart. I can hardly pinpoint movies. </p>
+
+  <p>For future improvement, I would like to know the several things below: 
+  <ul>
+  	<li>How to apply python codes into HTML? (still feel a little unclear about this)</li>
+  	<li>How to combine three data sets together into one visualization? Or maybe what kind of charts or graph should I be using in this scenario? </li>
+  	</ul>
+  </p>  
+  <br>
+  <br>
+
+  <a href="https://plot.ly/~ngl4/4/?share_key=g0BQ8ITde7zeCausQOLVC8" target="_blank" title="Popular Movies since 1990s" style="display: block; text-align: center;"><img src="https://plot.ly/~ngl4/4.png?share_key=g0BQ8ITde7zeCausQOLVC8" alt="Popular Movies since 1990s" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="ngl4:4" sharekey-plotly="g0BQ8ITde7zeCausQOLVC8" src="https://plot.ly/embed.js" async></script>
+
+  <br>
+  <p center="source">
+  More about the source: http://files.grouplens.org/datasets/tag-genome/README.html 
+  </p>
+
+</article>
+
+
+<footer>Exclusively for Advanced Composing Digital Media @2017</footer>
+
+</div>
+
+</body>
+</html>
