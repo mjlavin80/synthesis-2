@@ -1,2 +1,2 @@
-# empty template for synthesis-1
+# empty template for synthesis-2
 
