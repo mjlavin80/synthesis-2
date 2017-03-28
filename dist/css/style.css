@@ -1,20 +1,23 @@
 div {
-	display: block
-	width: 500px
+	display: block;
+	width: 500px;
+	color: #36454c;
+	padding: 10px;
 	}
 
 h1 {
-	font-family: cursive, Arial;
+	font-family: cursive, Verdana, Arial;
 	color: #816C5B;
 	}
 	
 h3 {
-	font-family: cursive, Arial;
+	font-family: cursive, Verdana, Arial;
 	color: #816C5B;
 	}
 
 body {
 	background-color: #E5F3CF;
+	font-family: Verdana'
 	}
 	
 
