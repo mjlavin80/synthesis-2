@@ -9,7 +9,7 @@ body { /*gradient background*/
   background: -webkit-linear-gradient(right top, #222222, #696969); 
   background: -o-linear-gradient(bottom left, #222222, #696969); 
   background: -moz-linear-gradient(bottom left, #222222, #696969); 
-  background: linear-gradient(to bottom left, #222222, #696969);  
+  background: linear-gradient(to bottom left, #393939, #c6e4f8);  
 
 
 
@@ -24,23 +24,35 @@ h1 {
 
 }
 
+.col-lg-12 {
+ background: rgba(0, 0, 0, .4);
+ padding: 1%;
+ margin-top: 1%;
+ border-top-style: solid;
+ border-bottom-style: solid;
+ border-color: black;
+ border-width: 10px;
+}
+
+.col-md-3 {
+  margin: 1%;
+}
+
 
 a {
   color:#fff !important;
+  font-weight: bold;
 
 }
 
 a:hover {
-  color:#00ffdb !important;
+  color:#c2c2c2 !important;
 }
 
-.navbar-inverse {
-  background-color:rgba(0,0,0,.7) !important;
-}
 
 p {
   color:#fff;
-  text-align: center;
+  text-align: left;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -52,7 +64,7 @@ p {
 }
 
 .test2 {
-  height:100%;
   margin-left: 2%;
   margin-right: 2%;
-  }
+
+}
