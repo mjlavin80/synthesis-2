@@ -1,26 +1,19 @@
+div {
+	display: block
+	}
+
 h1 {
 	font-family: cursive, Arial;
 	color: #816C5B;
 	}
 	
-td {
-	background-color: #97EAF4;
-	}
-	
-tr {
-	background-color: #97EAF4;
+h3 {
+	font-family: cursive, Arial;
+	color: #816C5B;
 	}
 
 body {
 	background-color: #E5F3CF;
-	}
-	
-th {
-	background-color: #97EAF4;
-	}
-	
-one {
-	background-color: #3CD6E6;
 	}
 	
 
