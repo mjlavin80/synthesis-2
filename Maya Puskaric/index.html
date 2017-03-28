@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- My CSS additions -->
+    <link href="dist/css/main.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+        <!-- Page Content -->
+        <div id="page-content-awrapper">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <h1>Allegheny County Hospital Grades</h1>
+                    <br>
+
+                    <div class="test2">
+                        <div class="col-md-3">
+                            <img src="county.png" height="425px">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-8">
+                        <div class="test2">
+                            <canvas id="myChart"/>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <p>It's easy to realize that not all locations are created equally when you're considering businesses like restaurants, shops, or even schools. However, when it comes to hospitals, we tend to look the other way. Maybe it's out of not wanting to imagine otherwise or, perhaps, it's because we tend to have faith in places of medical work. No matter what the cause we often place all hospitals on the same playing field. After all, in a time of emergency is there really time to risk going anywhere but the closest emergency room? <br><br>
+
+                        Awhile back I stumbled upon a release of hospital grades that essentially provided major medical centers with a letter grade style score ranking them on their safety over a number of categories. Curious to see how Pittsburgh hospitals stacked up, I manually created a dataset of the entries regarding 2013 to 2016 from <a href="http://www.hospitalsafetygrade.org/">Leapfrog Hospital Safety Grade</a> that fell within the boundaries of Allegheny County's county lines. I narrowed down Leapfrog's Pennsylvania list by crosschecking the entries with the Western Pennsylvania Regional Data Center's <a href="https://data.wprdc.org/dataset/hospitals">Allegheny County Hospitals</a> dataset. <br><br>
+
+                        Though the Data Center's dataset listed significantly more hospitals as relevant to the region, Leapfrog's grading system cannot be applied to several types of medical care centers which caused a large portion of the list to be quickly discounted. Hospitals like psychiatric hospitals, children's hospitals, and veteran's hospitals are not required to disclose the same safety information that the standard hospitals graded above have. Additionally, small, underperforming hospitals often lack the data quantity or dedicated staff to record the numbers needed for an accurate grading to occur. Combining these and other non-typical situations, only 13 hospitals in our region are able to be included here. Though I anticipated many of the non-gradeable hospitals, I was surprised to find Magee's, Mercy, and Montefiore absent from the final list. <br><br>
+
+                        When declaring these grades, Leapfrog looks at categories such as Infections, Surgical Problems, Preventative Practices, General Safety, and Staff Collaboration. Under each broad grouping, they cite several specific sub-categories like MRSA and C. Diff under Infections or patient falls and bed sores under General Safety. On their site, gauges are given showing the score breakdown for each of these specific points for each hospital as well as a side by side comparison of the worst and best scores in that area. There are a lot of helpful and interesting bits of information that anyone with a computer can access to make themselves more aware of hospital shortcomings (and successes) in medical centers around them. Though I sectioned only a single county's worth of data, Leapfrog has similar rankings for hospitals in every state.<br><br>
+
+                        Though I had seen the data beforehand, when I was collecting and organizing it, I failed to notice an interesting trend in our Pittsburgh hospitals until I gave the data over to the graph to display in a fashion that allowed easy comparison by year. Several hospitals around here have declined consistency with their safety scores over the last three years. Allegheny General fell from an A (5) to a D+ (2.5) in just three years. In the same time span, West Penn fell from an A (5) to a C (3) and Ohio Valley fell from a C (3) to a D (2). Not a single Pittsburgh hospital increased their score overall between 2013 and 2016. A few stayed consistent, although not high achieving, and St. Clair stood far above the rest being the only to achieve an A in every report card. What does this mean overall? Perhaps we should take a closer look at where our hospitals are failing to meet their safety requirements and what support they might need to start improving in the right direction. </p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- /#page-content-wrapper -->
+</div>
+
+
+
+
+
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="dist/js/jquery.js"></script>
+
+<!-- Chart.js -->
+<script src="dist/js/chart.bundle.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="dist/js/bootstrap.min.js"></script>
+
+<!-- Main.js -->
+<script src="dist/js/main.js"></script>
+
+
+
+</body>
+
+</html>
