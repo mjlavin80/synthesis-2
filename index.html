@@ -22,7 +22,7 @@ p {
     color: black;
     font-family: Trebuchet MS;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -48,6 +48,11 @@ a {
     margin: auto;
     width: 60%;
 }
+.picture img {
+	display:block;
+	margin: auto;
+	width: 60%;
+	}
 	
 button {
     	background-color: #D10E0E;
@@ -56,13 +61,18 @@ button {
     	padding: 15px 32px;
     	text-align: center;
     	text-decoration: none;
-   		display: inline-block;
+   		display: grid;
     	font-size: 12px;
     	margin: 2px 2px;
     	cursor: pointer;
 		font-family: trebuchet ms;
 		margin-left: auto;
-
+	}
+.cheeto img {
+	display: block;
+    margin: auto;
+    width: 60%;
+	}
 </style>
 </head>
 <body>
@@ -71,38 +81,46 @@ button {
 
 <h4>By Katie Osborne</h4>
 
-<hr style: color= #1670E6>
+<hr style: color= #1670E6 </hr>
 
 <script type = "text/javascript">
         function trump2017()
         {
-            document.getElementById("2017").src = "trump2017.png";
+            document.getElementById("picture").src = "trump2017.png";
         }
         function trump2016()
         {
-            document.getElementById("2016").src ="trump2016.png";
+            document.getElementById("picture").src ="trump2016.png";
+		}
 		function trump2015()
         {
-            document.getElementById("2015").src ="trump2015.png";
-        }function trump2014()
+            document.getElementById("picture").src ="trump2015.png";
+		}
+        function trump2014()
         {
-            document.getElementById("2014").src ="trump2014.png";
-        }function trump2013()
+            document.getElementById("picture").src ="trump2014.png";
+        }
+		function trump2013()
         {
-            document.getElementById("2013").src ="trump2013.png";
-        }function trump2012()
+            document.getElementById("picture").src ="trump2013.png";
+        }
+		function trump2012()
         {
-            document.getElementById("2012").src ="trump2012.png";
-        }function trump2011()
+            document.getElementById("picture").src ="trump2012.png";
+        }
+		function trump2011()
         {
-            document.getElementById("2011").src ="trump2011.png";
-        }function trump2010()
+            document.getElementById("picture").src ="trump2011.png";
+        }
+		function trump2010()
         {
-            document.getElementById("2010").src ="trump2010.png";
-        }function trump2009()
+            document.getElementById("picture").src ="trump2010.png";
+        }
+		function trump2009()
         {
-            document.getElementById("2009").src ="trump2009.png";
-        } 
+            document.getElementById("picture").src ="trump2009.png";
+        }
+
 	</script>
 
 <button onclick="trump2017()">2017</button>
@@ -114,6 +132,10 @@ button {
 <button onclick="trump2011()">2011</button>
 <button onclick="trump2010()">2010</button>
 <button onclick="trump2009()">2009</button>
+
+<div class="picture">
+<img src = "" id = "picture"/> 
+	</div>		
 
 <p>To build on my synthesis 1 assignment, I decided to take another look at the data I found of all of Donald Trump's tweets since the creation of his <a href="https://twitter.com/realDonaldTrump">@realdonaldtrump</a> Twitter account in 2009. In the last project, I looked at the most common words used in both Trump's and Obama's tweets during the times they have been president. This time, I wanted to look more closely at The Donald to see how his language usage has changed (or not changed) over time.</p> 
 
@@ -134,4 +156,10 @@ button {
 </div>
 
 <p>I think that it is really important as Americans that we stay aware of the political climate and current events. With all the talk of fake news and all the scanda that has surrounded the Trump presidency, I think it's more vital than ever that we are vigilant about the information we take in and choose to believe. Donald Trump's Twitter has been hugely controversial and I personally think he uses it to manipulate people and spread rumors to take away from his own failures both as a president and as a person. The language we use to communicate with the world around us is very telling as to who we are as people and how we interact with others. By taking a closer look at Donald Trump's Twitter usage, I want to help raise awareness about how trump uses words to manipulate audiences. Although this project is just a word cloud showing his most used words, I think text analysis is a big first step into seeing who Donald Trump really is, behind is orange facade. </p>
+	</div>
+<div class="cheeto"> 
+<img src="http://dcdiningguide.com/wp-content/uploads/2016/06/ClFSkuvXIAAoPS-.jpg">
+</div>">
+</div>
+
 </html>
