@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   var ctx = document.getElementById('myChart').getContext('2d');
 
+/*I wanted the year labels (the ones you click) to not inheret the color from the top bar of their data set, but could not find a working solution*/
   var dataOptions = {
     labels: ["Allegheny General", "Allegheny Valley", "Forbes Regional", "Heritage Valley", "Jefferson Regional", "Ohio Valley", "St. Clair", "UPMC East", "UPMC McKeesport", "UPMC Passavant", "UPMC Presbyterian", "UPMC St. Margaret's", "West Penn"],
     datasets: [{

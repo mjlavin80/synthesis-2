@@ -5,10 +5,10 @@
 
 
 body { /*gradient background*/
-  background: #222222; 
-  background: -webkit-linear-gradient(right top, #222222, #696969); 
-  background: -o-linear-gradient(bottom left, #222222, #696969); 
-  background: -moz-linear-gradient(bottom left, #222222, #696969); 
+  background: #393939; 
+  background: -webkit-linear-gradient(right top, #393939, #c6e4f8); 
+  background: -o-linear-gradient(bottom left, #393939, #c6e4f8); 
+  background: -moz-linear-gradient(bottom left, #393939, #c6e4f8); 
   background: linear-gradient(to bottom left, #393939, #c6e4f8);  
 
 

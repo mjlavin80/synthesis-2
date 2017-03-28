@@ -1,9 +1,8 @@
-A heart rate analysis of my own data from 2-28-2017 to 3-2-2017.
+Data: http://www.hospitalsafetygrade.org/
 
-Dataset Credits: Data gathered from fitbit Charge HR and CVS Finger Monitor
+Data: https://data.wprdc.org/dataset/hospitals
 
-Visualization: chart.js
+Image: Archival Map from Historial Records via ancestry.com
 
-Navbar: Simple Bootstrap Theme
+Primarily used chart.js
 
-Data downsampling: Done with python
