@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <style>
 button {
-    background-color: #D10E0E; /* Green */
+    background-color: #D10E0E;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -20,9 +19,6 @@ button {
 </head>
 <body>
 
-<h2>Button Colors</h2>
-<p>Change the background color of a button with the background-color property:</p>
-
 <button onclick="document.getElementById('2017').src='trump2017.png'">2017</button>
 <button onclick="document.getElementById('2016').src='trump2016.png'">2016</button>
 <button onclick="document.getElementById('2015').src='trump2015.png'">2015</button>
@@ -34,7 +30,24 @@ button {
 <button onclick="document.getElementById('2009').src='trump2009.png'">2009</button>
 
 <img id="2017" src="tump2017.png" style="width:1000px">
-<img id="2016" src="tump2016.png" style="width:100px">
+<img id="2016" src="tump2016.png" style="width:1000px">
 
+<script type = "text/javascript">
+        function trump2017()
+        {
+            document.getElementById("2017").src = "trump2017.png";
+        }
+        function trump2016()
+        {
+            document.getElementById("2016").src ="trump2016.png";
+        } </script>
+
+
+
+
+
+    <img src = "" id = "img"/> <input type="button" value="Show Picture
+    1" onclick="pic1()"/> <input type="button" value="Show Picture 2"
+    onclick="pic2()"/>
 </body>
 </html>
