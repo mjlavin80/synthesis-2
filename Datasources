@@ -1,0 +1,10 @@
+<h2>Data Set Sources</h2>
+
+<h4>Bike Stations</h4>
+  <p>To figure out how many bike racks there are in each neighborhood, I used a map from The Western Pennsylvania Regional Data Center's website. I counted each bike stop in each neighborhood (and double-checked my numbers) to get my data. The page link for the map is <a href='https://data.wprdc.org/dataset/healthyride-stations'>here.</a></p>
+  
+<h4>Bus Stops</h4>
+  <p>To figure out how many bus stops there are in each neighborhood, I used a map from Port Authority's website. I eliminated all layers on the map except the bus stops and counted each stop by hand for each neighborhood, double-checking my numbers, as I could not find any dataset listing the number of bus stops in Pittsburgh. The link to Port Authority's map is <a href='https://paac.maps.arcgis.com/apps/webappviewer/index.html?id=21b561fba9284378be9f1c620f2dd48e'>here.</a></p>
+  
+<h5>Neighborhood Map</h5>
+  <p>To ensure I remained within the correct boundaries of each neighborhood while counting bike racks and bus stops, I referenced <a href='https://en.wikipedia.org/wiki/List_of_Pittsburgh_neighborhoods'>this map</a> as an approximate guide to supplement my prior knowledge of the neighborhood boundaries.</p>
