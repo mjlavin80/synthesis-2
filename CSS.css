@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+body {
+    background-color: #c6ddff;
+}
