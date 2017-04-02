@@ -1,1 +1,175 @@
-This file is just a reminder to title your project "index.html"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Synthesis Two</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link type="text/css" rel="stylesheet" href="js/styles.css" />
+  <!-- Script Loading From Sigma.js example-->
+<script src="js/sigma.core.js.download"></script>
+<script src="js/conrad.js.download"></script>
+<script src="js/sigma.utils.js.download"></script>
+<script src="js/sigma.polyfills.js.download"></script>
+<script src="js/sigma.settings.js.download"></script>
+<script src="js/sigma.classes.dispatcher.js.download"></script>
+<script src="js/sigma.classes.configurable.js.download"></script>
+<script src="js/sigma.classes.graph.js.download"></script>
+<script src="js/sigma.classes.camera.js.download"></script>
+<script src="js/sigma.classes.quad.js.download"></script>
+<script src="js/sigma.classes.edgequad.js.download"></script>
+<script src="js/sigma.captors.mouse.js.download"></script>
+<script src="js/sigma.captors.touch.js.download"></script>
+<script src="js/sigma.renderers.canvas.js.download"></script>
+<script src="js/sigma.renderers.webgl.js.download"></script>
+<script src="js/sigma.renderers.svg.js.download"></script>
+<script src="js/sigma.renderers.def.js.download"></script>
+<script src="js/sigma.webgl.nodes.def.js.download"></script>
+<script src="js/sigma.webgl.nodes.fast.js.download"></script>
+<script src="js/sigma.webgl.edges.def.js.download"></script>
+<script src="js/sigma.webgl.edges.fast.js.download"></script>
+<script src="js/sigma.webgl.edges.arrow.js.download"></script>
+<script src="js/sigma.canvas.labels.def.js.download"></script>
+<script src="js/sigma.canvas.hovers.def.js.download"></script>
+<script src="js/sigma.canvas.nodes.def.js.download"></script>
+<script src="js/sigma.canvas.edges.def.js.download"></script>
+<script src="js/sigma.canvas.edges.curve.js.download"></script>
+<script src="js/sigma.canvas.edges.arrow.js.download"></script>
+<script src="js/sigma.canvas.edges.curvedArrow.js.download"></script>
+<script src="js/sigma.canvas.edgehovers.def.js.download"></script>
+<script src="js/sigma.canvas.edgehovers.curve.js.download"></script>
+<script src="js/sigma.canvas.edgehovers.arrow.js.download"></script>
+<script src="js/sigma.canvas.edgehovers.curvedArrow.js.download"></script>
+<script src="js/sigma.canvas.extremities.def.js.download"></script>
+<script src="js/sigma.svg.utils.js.download"></script>
+<script src="js/sigma.svg.nodes.def.js.download"></script>
+<script src="js/sigma.svg.edges.def.js.download"></script>
+<script src="js/sigma.svg.edges.curve.js.download"></script>
+<script src="js/sigma.svg.labels.def.js.download"></script>
+<script src="js/sigma.svg.hovers.def.js.download"></script>
+<script src="js/sigma.middlewares.rescale.js.download"></script>
+<script src="js/sigma.middlewares.copy.js.download"></script>
+<script src="js/sigma.misc.animation.js.download"></script>
+<script src="js/sigma.misc.bindEvents.js.download"></script>
+<script src="js/sigma.misc.bindDOMEvents.js.download"></script>
+<script src="js/sigma.misc.drawHovers.js.download"></script>
+<!-- END SIGMA IMPORTS -->
+<script src="js/gexf-parser.js.download"></script>
+<script src="js/sigma.parsers.gexf.js.download"></script>
+<!-- End of example code -->
+</head>
+<body>
+<header role="banner">
+<h1>Synthesis Two</h1>
+</header>
+<main role="main">
+<article>
+<h2>Artist Statement</h2>
+<p>This is an interactive visualization of my Facebook friends network.  In 2015, Facebook put their network analytics behind a paywall for small buisnesses and marketers.  The GET friends command in the API now returns this message: </p><p>"Only friends who installed this app are returned in API v2.0 and higher. total_count in summary represents the total number of friends, including those who haven't installed the app."</p><p>The current API is v2.8 and users can only access back to v2.3.  The only way to map your Facebook network is to brute force it. Lost Circles is an app for Chrome that does just that.  It crawls the HTML of your friends list, then opens each of their Facebook pages, and crawls their friends list too.  This can take a varying time dependent upon your processing and Internet speed.</p><p>After Lost Circles has fully loaded your network, there is a quick and dirty visualization or you can export to JSON or GraphML file.  I chose the latter to load into Gephi.</p>
+<p>Gephi is an open source network visualization program.  Within Gephi, I noticed the limitations of crawling your own Facebook data: privacy settings.  I was expecting far more edges for the number of nodes.  It seems that the most connected people have the least privacy settings.  Also, every node has at least one edge to me which is not depicted.</p>
+<p>A modularity test showed approximately 6-8 distinct groups but could not distinguish the groups of ~50 nodes.  Some of these individuals have tight privacy settings, some are just people I have no mutual friends with and others are probably anomalies in Lost Circles (good band name).  There seems to be a few instances where spouses are not connected, possibly as they are not in the friends category.</p>
+<p>The groups that are present are categorically accurate.  There is a general connectivity in many places, but sub groups within that overall connection are clear.  The separated groups are all accurate representations of groups of my friends as well.  The three separated groups light pink, magenta, and orange are my family, friends from Virginia Tech and my World of Warcraft clan respectively.  In the connected mess I'll deem "Pittsburghers," the largest subgroup, bright pink is Middle School classmates, mostly people I had spent six years with in High School.  Green is the ice hockey community by and large.  Blue is my old job and Pitt students, while teal is a group of East Enders i.e. Squirrel Hill and Point Breeze. Black is essentially "other" High School friends.  It could also just be called Beth.</p>
+<p>When loading the GraphML into Gephi, the program indicated that it collapsed parallel lines.  There appear to be many things missing.  The dialectic argument is that there is ton here that makes no rhyme or reason.  There is a sense that I didn't know some of these people were friends, so I hypothesize only the strangest distinctions are mapped.  I assume my brother-in-law is connected to my mother but he only has one edge to my aunt.  There are many more examples like this.  My father is not on this map.</p>
+<p>This isn't the most accurate representation of my actual Facebook network.  Even paying Facebook for advertising services doesn't guarantee that any individual user's privacy rights will exclude them.  Only Facebook has the true extent of the network.</p>
+<p>Once the network was created, various transformations were applied.  Force Atlas and Force Atlas both created messy blobs, while Yifan Hu threw all the outliers out, but provided a meta structure.  The Fruchterman Reingold transformation then collapsed the Yifan Hu to a pleasant and coherent structure.  Edges and nodes were colored by modularity, and exported to a gexf file.</p>
+<p>I used sigma.js to load the .gexf rather than gexf-js-master, as it had the all important functionality of better documentation.  Using an example and a tutorial, I was able to add interactivity within the webage to the graph.  Upon clicking a node, every other node and edge turns grey.  The gexf is then searched for that node's network which is then colored and displayed based on the graph's properties.</p>
+<p>There's much I cannot explain about what is going on here, but for the most part this is exactly what I was attempting to accomplish.</p>
+</article>
+<!-- More code from the example -->
+<div id="container">
+  <style>
+    #graph-container {
+      top: 0;
+      bottom: 0;
+      left: 0; 
+      right: 0;
+      position:fixed;
+      z-index: -1
+    }
+  </style>
+  <div id="graph-container"><canvas class="sigma-scene" width="2084px" height="1442px" style="position: absolute; width: 1042px; height: 721px;"></canvas><canvas class="sigma-labels" width="1042px" height="721px" style="position: absolute; width: 1042px; height: 721px;"></canvas><canvas class="sigma-mouse" width="1042px" height="721px" style="position: absolute; width: 1042px; height: 721px;"></canvas></div>
+</div>
+<!-- End example code-->
+<!-- This code comes from the sigma.js tutorial, with some variables changed -->
+<script>
+  // Add a method to the graph model that returns an
+  // object with every neighbors of a node inside:
+  sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k,
+        neighbors = {},
+        index = this.allNeighborsIndex[nodeId] || {};
+
+    for (k in index)
+      neighbors[k] = this.nodesIndex[k];
+
+    return neighbors;
+  });
+
+  sigma.parsers.gexf(
+    'fb3.gexf',
+    {
+      container: 'graph-container'
+    },
+    function(s) {
+      // We first need to save the original colors of our
+      // nodes and edges, like this:
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+      s.graph.edges().forEach(function(e) {
+        e.originalColor = e.color;
+      });
+
+      // When a node is clicked, we check for each node
+      // if it is a neighbor of the clicked one. If not,
+      // we set its color as grey, and else, it takes its
+      // original color.
+      // We do the same for the edges, and we only keep
+      // edges that have both extremities colored.
+      s.bind('clickNode', function(e) {
+        var nodeId = e.data.node.id,
+            toKeep = s.graph.neighbors(nodeId);
+        toKeep[nodeId] = e.data.node;
+
+        s.graph.nodes().forEach(function(n) {
+          if (toKeep[n.id])
+            n.color = n.originalColor;
+          else
+            n.color = '#eee';
+        });
+
+        s.graph.edges().forEach(function(e) {
+          if (toKeep[e.source] && toKeep[e.target])
+            e.color = e.originalColor;
+          else
+            e.color = '#eee';
+        });
+
+        // Since the data has been modified, we need to
+        // call the refresh method to make the colors
+        // update effective.
+        s.refresh();
+      });
+
+      // When the stage is clicked, we just color each
+      // node and edge with its original color.
+      s.bind('clickStage', function(e) {
+        s.graph.nodes().forEach(function(n) {
+          n.color = n.originalColor;
+        });
+
+        s.graph.edges().forEach(function(e) {
+          e.color = e.originalColor;
+        });
+
+        // Same as in the previous event:
+        s.refresh();
+      });
+    }
+  );
+</script>
+<!-- This is the end of the tutorial code -->
+ </main>
+
+ <footer> by Michael O'Connell oconnell.m@gmail.com </footer>
+ </body>
+ </html>
